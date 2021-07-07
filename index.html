@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid statistic</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" type="img.icon" href="img/icon-statistic.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1> <span id="words"></span></h1>
+    </header>
+
+    <form>
+        <input type="text" 
+        class="input-text"
+        id="input-text"
+        placeholder="Search Country ..."
+        autocomplete="off">
+        <button id="search-btn">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+
+    <section class="information">
+        <ul>
+            <li>
+                <h1>Country Name</h1>
+                <img id="flag-img" src="" alt="">
+                <h2 id="countryName"></h2>
+            </li>
+
+            <li>
+                <h1>Confirmed</h1>
+                <i class="fas fa-viruses"></i>
+                <h2 id="confirmed"></h2>
+            </li>
+            
+            <li>
+                <h1>Deaths</h1>
+                <i class="fas fa-skull-crossbones"></i>
+                <h2 id="deaths"></h2>
+            </li>
+
+            <li>
+                <h1>Recovered</h1>
+                <i class="fas fa-running"></i>
+                <h2 id="recovered"></h2>
+            </li>
+
+            <li>
+                <h1>Active</h1>
+                <i class="fas fa-hospital-user"></i>
+                <h2 id="active"></h2>
+            </li>
+        </ul>
+    </section>
+    <script src="typed.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

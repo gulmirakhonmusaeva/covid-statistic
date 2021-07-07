@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+:root {
+    --firstfont :'Prosto One', display;
+    
+}
+
+body {
+  height: 100vh;
+  font-family: var(--firstfont);
+  margin: 0;
+  text-align: center;
+  color: #fff;
+    background-color: #080a0a;
+}
+
+header {
+    min-height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.5) 100%,rgba(0,0,0,0.5) 100%), url(img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+form { 
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form input, form button {
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #fff;
+}
+
+form input {
+    width: 20rem;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+form button {
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background-color: #a70808;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color:#fa4343 ;
+}
+
+.information {
+    margin: auto;
+    width: 95%;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    border-radius: 10px;
+    background-color: black;
+}
+
+ul li i {
+    font-size: 4rem;
+}
