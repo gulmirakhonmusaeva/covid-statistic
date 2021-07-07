@@ -41,7 +41,7 @@ form input, form button {
 }
 
 form input {
-    width: 20rem;
+    width: 40%;
     outline: none;
     border-radius: 5px 0 0 5px;
 }
